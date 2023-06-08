@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science & AI Student</p>
+            <h1>Hey, I'm <span>Karl</span><br>I do things with software :)</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Passionate about building software, I'm currently a bachelor student at IE university studying computer science & artificial intelligence where we enhance our software skills, learn about data analytics and machine learning.</p> My primary goal is to gain practical work experience in order to better understand the industry and envision myself in a leadership role. My ultimate objective is to achieve the highest level of education while simultaneously gaining hands-on experience, in order to build a successful career in the field of software development as well as business management.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                    <p class="tab-links" onclick="opentab('Languages')">Languages</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Pandas | SciPY | Numpy | MatPlotLib | Pygame | Graphics</li>
+                        <li><span>Web Development</span><br>Html | CSS</li>
+                        <li><span>C++ | AI | Rust</span><br>Intermediate knowledge and use of these languages | machine learning </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br> 1 month internship at broadcom software - Cybersecurity pre-sales consultant</li>
+                        <li><span>2022-2023</span><br> Self employed in e-commerce</li>
+                        <li><span>2020-2022</span><br>Co-founder at Studdy Buddy Dubai - Nonprofit tutoring group</li>
+                        <li><span>2020</span><br>1 month Internship at Symentic in software.</li>
+                        <li><span>2019 </span><br>1 month Internship at Al Suwaidi & Company.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2026</span><br>Enrolled in IE university - Computer science & AI.</li>
+                        <li><span>2022</span><br>L.L.F.P Dubai - French Bac, specialised in computer science and mathematics - overall grade: very good.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="courses">
+                    <ul>
+                        <li><span>03/2023</span><br>Artificial intelligence virtual internship - Cognizant</li>
+                        <li><span>02/2023</span><br>First step into Rust - Microsoft</li>
+                        <li><span>02/2023</span><br>Pythong for AI and developement - IBM 3 weeks</li>
+                        <li><span>01/2023</span><br> Virtual internship in data analysis - Quantum</li>
+                        <li><span>01/2023</span><br>AI with python - Harvard 12 week course</li>
+                        <li><span>12/2022</span><br>Virtual externship in Cybersecurity - Clifford Chance</li>
+                        <li><span>12/2022 </span><br>C++ programming - Codio 6 weeks</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Languages">
+                    <ul>
+                        <li><span></span><br>English - Native</li>
+                        <li><span></span><br>French - Native</li>
+                        <li><span></span><br>Arabic - Native</li>
+                        <li><span></span><br>Spanish - Conversational</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------projects---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web developement</h2>
+                <p>The website which you are on is one of my projects :) I developed this website from scratch using html and CSS.</p>
+                <a href="#">Contact me for more info</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Rust Pong game</h2>
+                <p>I was able to create a functional and enjoyable game that showcases Rust's advantages, such as its strong type system and memory safety.</p>
+                <a href="#">Contact me for more info</a>
+            </div>
+            <div>
+                <i class="fas fa-atom"></i>
+                <h2> Electric curcuit lock (Physics)</h2>
+                <p>Built a door lock system that utilizes fingerprint scanning, RFID keycards, an Arduino-controlled mechanism, a display for door status, a servo for locking/unlocking, a piezobuzzer for sound feedback, and an ultrasonic sensor to detect user proximity.</p>
+                <a href="#">Contact me for more info</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>mouchantafkarl@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +34 658732559</p>
+                <div class="social-icons">                
+                    <a href="https://www.linkedin.com/in/karl-mouchantaf-ab7b50201/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Karl Mouchantaf CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Karl mouchantaf :) <i class="fas fa-heart"></i> </a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBqEiBB6VhWimsZPOCD8I9vkOzaVc-rpnxRdtLiYDSjIMvlfSSwuTaqEmthIhyhq5YoQ/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ 
+</body>
+</html>
